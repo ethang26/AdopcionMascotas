@@ -1,0 +1,20 @@
+@model AdopcionMascotas.Models.Pet
+
+<form method="post" asp-controller="Pets" asp-action="Create">
+    <label>Nombre:</label>
+    <input asp-for="Nombre" required />
+
+    <label>Edad:</label>
+    <input asp-for="Edad" type="number" min="0" required />
+
+    <label>Tipo:</label>
+    <input asp-for="Tipo" required />
+
+    <label>Estado de Adopción:</label>
+    <select asp-for="EstadoAdopcion">
+        <option>Disponible</option>
+        <option>Adoptada</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+</form>

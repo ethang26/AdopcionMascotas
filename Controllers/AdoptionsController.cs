@@ -16,7 +16,7 @@ namespace AdopcionMascotas.Controllers
             _context = context;
         }
 
-        [HttpPost]
+
         public async Task<IActionResult> AsignarAdopcion(int petId, int adopterId)
         {
             var adopcion = new Adoption

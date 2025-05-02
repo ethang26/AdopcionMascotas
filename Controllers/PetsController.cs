@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using AdopcionMascotas.Models;
 
 namespace AdopcionMascotas.Data{
+
     public class PetsController : Controller{
 
         private readonly ApplicationDbContext _context;
@@ -9,8 +10,6 @@ namespace AdopcionMascotas.Data{
         public PetsController(ApplicationDbContext context) {
             _context = context;
         }
-
-        [HttpPost]
         public async Task<IActionResult> Create(Pet pet)
         {
             if (ModelState.IsValid)

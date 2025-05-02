@@ -1,4 +1,4 @@
-# Etapa 1: Build
+# Etapa 1: Compilación
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
@@ -10,10 +10,12 @@ COPY AdopcionMascotas/. ./AdopcionMascotas/
 WORKDIR /app/AdopcionMascotas
 RUN dotnet publish -c Release -o out
 
-# Etapa 2: Run
+# Etapa 2: Ejecución
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/AdopcionMascotas/out ./
+
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
+
 ENTRYPOINT ["dotnet", "AdopcionMascotas.dll"]

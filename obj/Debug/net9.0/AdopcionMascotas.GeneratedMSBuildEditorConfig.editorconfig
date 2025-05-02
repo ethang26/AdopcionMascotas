@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario/AdopcionMascotas/Views/Adoptions/ListadoAdopciones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25zXExpc3RhZG9BZG9wY2lvbmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/AdopcionMascotas/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,10 +46,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Usuario/AdopcionMascotas/Views/Pets/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Usuario/AdopcionMascotas/Views/Pets/ListaAdopciones.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xMaXN0YUFkb3BjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/AdopcionMascotas/Views/Shared/Error.cshtml]
