@@ -1,21 +1,23 @@
-@model IEnumerable<dynamic>
+@model IEnumerable<AdopcionMascotas.Models.Pet>
 
-<h2>Listado de Adopciones</h2>
+<h2>Listado de Mascotas y Estado de Adopción</h2>
 <table class="table">
     <thead>
         <tr>
             <th>Mascota</th>
-            <th>Adoptante</th>
+            <th>Edad</th>
+            <th>Tipo</th>
             <th>Estado</th>
         </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
+    @foreach (var mascota in Model)
     {
         <tr>
-            <td>@item.Mascota</td>
-            <td>@item.Adoptante</td>
-            <td>@item.Estado</td>
+            <td>@mascota.Nombre</td>
+            <td>@mascota.Edad</td>
+            <td>@mascota.Tipo</td>
+            <td>@mascota.EstadoAdopcion</td>
         </tr>
     }
     </tbody>

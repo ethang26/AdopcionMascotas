@@ -37,9 +37,9 @@ namespace AdopcionMascotas.Controllers
 
         public async Task<IActionResult> ListadoAdopciones()
         {
-            var lista = await _context.Adoptions
-                .Include(a => a.Pet)
-                .Include(a => a.Adopter)
+            var lista = await _context.Pets
+                .Include(p => p.Adoption)
+                .ThenInclude(a => a.Adopter)
                 .ToListAsync();
 
             return View(lista);
