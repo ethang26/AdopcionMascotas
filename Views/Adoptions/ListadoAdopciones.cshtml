@@ -1,0 +1,24 @@
+@model IEnumerable<AdopcionMascotas.Models.Pet>
+
+<h2>Listado de Mascotas y Estado de Adopción</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mascota</th>
+            <th>Edad</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var mascota in Model)
+    {
+        <tr>
+            <td>@mascota.Nombre</td>
+            <td>@mascota.Edad</td>
+            <td>@mascota.Tipo</td>
+            <td>@mascota.EstadoAdopcion</td>
+        </tr>
+    }
+    </tbody>
+</table>
